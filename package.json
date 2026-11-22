@@ -1,15 +1,8 @@
 {
   "name": "toonify",
-  "version": "2.0.0",
-  "description": "Photo to comic-book converter. Fully local, no external APIs.",
+  "version": "3.0.0",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "scripts": { "start": "node server.js" },
   "engines": { "node": ">=18" },
-  "dependencies": {
-    "express": "^4.19.2",
-    "multer": "^1.4.5-lts.1",
-    "sharp": "^0.33.4"
-  }
+  "dependencies": { "express": "^4.19.2", "sharp": "^0.33.4" }
 }
