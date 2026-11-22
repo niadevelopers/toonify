@@ -144,9 +144,9 @@ async function render(input, colored, requestedStrength) {
 
       // A faint paper gap prevents the result from becoming a solid black/white filter.
       const dark = clamp(graphite, 0, 0.93);
-      out[o] = clamp(Math.round(lerp(pr, 38, dark)));
-      out[o + 1] = clamp(Math.round(lerp(pg, 35, dark)));
-      out[o + 2] = clamp(Math.round(lerp(pb, 31, dark)));
+      out[o] = clamp(Math.round(lerp(pr, 38, dark)), 0, 255);
+      out[o + 1] = clamp(Math.round(lerp(pg, 35, dark)), 0, 255);
+      out[o + 2] = clamp(Math.round(lerp(pb, 31, dark)), 0, 255);
     }
   }
 
